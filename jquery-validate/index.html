@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+    <script src="./js/main.js"></script>
+    <style>
+        .error{
+            color: red;
+            font-size: 16px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+    <body>  
+        <div class="container">
+            <form action="" id="form-validate">
+                <div class="form-group">
+                    <label for="">Username</label>
+                    <input type="text" class="form-control" name='username'>
+                </div>
+                <div class="form-group">
+                    <label for="">Password</label>
+                    <input type="text" class="form-control" name='pass' id="cf_password">
+                </div>
+                <div class="form-group">
+                    <label for="">Confirm Password</label>
+                    <input type="text" class="form-control" name='repass'>
+                </div>
+                <div class="form-group">
+                    <label for="">Email</label>
+                    <input type="text" class="form-control" name='email'>
+                </div>
+                <div class="form-group">
+                    <select name="select_valid" id="" class="form-control">
+                        <option value=''>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="radio" class="form-control" name='color'>red
+                    <input type="radio" class="form-control" name='color'>yellow
+                    <input type="radio" class="form-control" name='color'>green
+                </div>
+               <center> <div class="btn btn-outline-primary">Submit</div></center>
+            </form>
+        </div>
+    </body>
+</html>
