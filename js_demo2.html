@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Giai Phuong Trinh</title>
+	<script type="text/javascript">
+		function giaipt(){
+					a=parseFloat(prompt("Nhập a:"));
+			b=parseFloat(prompt("Nhập b:"));
+		if(a==0)
+		{
+			if(b==0)
+			{
+				alert("Phương trình có vố số nghiệm.");
+			}
+			else
+			{
+				alert("Phương trình vô nghiệm");
+			}
+
+		}
+		else
+		{
+			alert("Phương trình có nghiệm duy nhất x="+(-b/a));
+		}
+	}
+	function kiemtranam(year) 
+	{
+		return (year % 400 == 0) || (( year % 4 == 0) && (year % 100 !=0));
+	}
+	function tinhsongay(month,year)
+	{
+		switch(month)
+		{
+			case 1:
+			case 3:
+			case 5:
+			case 7:
+			case 8:
+			case 10:
+			case 12:
+				return 31;
+			case 4:
+			case 6:
+			case 9:
+			case 11:
+				return 30;
+			case 2:
+				if(kiemtranam(year))
+				{
+					return 29;
+				}
+				else
+				{
+					return 28;
+				}
+				default:
+				return -1;
+		}
+		
+	}
+	//alert("Số ngày của tháng 6/2021: " + tinhsongay(6,2021) + " Ngày");
+	function docso(number){
+		switch (number){
+			case 0: return "Không ";
+			case 1: return "Một";
+			case 2: return "Hai";
+			case 3: return "Ba ";
+			case 4: return "Bốn";
+			case 5: return "Năm";
+			case 6: return "Sáu";
+			case 7: return "Bảy";
+			case 8: return "Tám";
+			case 9: return "Chín";
+			default: return "Không biết";
+		}
+	}
+//	alert("Đọc số 6: "+ docso(6));
+	function docso3(number) 
+	{
+		donvi = number%10;
+		chuc=(Math.floor(number/10))%10;
+		tram=(Math.floor(number/100));
+		if(chuc == "0"){
+			return docso(tram) + " Trăm linh " + docso(donvi);
+		}
+		else if(chuc == "1"){
+			return docso(tram) + " Trăm mười " + docso(donvi);
+		}
+		else {
+			return docso(tram) +" Trăm " +docso(chuc)+" mươi "+docso(donvi);
+		}
+		
+	}
+ //  alert("doc so 212:"+ docso3(212));
+ for(var ga=0;ga<=36;ga++)
+ 	for(var cho =0;cho<=36;cho++)
+ 		if(ga+cho==36&&ga*2+cho*4==100)
+ 		//	alert("Số gà: "+ ga + "Số chó: "+cho);
+ 		for(var ga=0;ga<=36;ga++)
+ 			if(ga*2+4*(36-ga)==100)
+ 				alert("Số gà: "+ga+" Số chó: "+(36-ga));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

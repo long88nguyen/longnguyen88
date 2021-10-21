@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Js Demo</title>
+	<script type="text/javascript">
+		function showName(name){
+			alert("hello "+name);
+		}
+		function ask(){
+			var name=prompt("Your Name?");
+			return name;
+		}
+		function confirmAsk()
+		{
+			if(confirm("Do you want to ask my name?"))
+			{
+				var name=ask();
+				showName(name);
+			}
+		}
+		
+	</script>
+</head>
+<body>
+	<button onclick="confirmAsk()">Hide Name</button>
+	<button onclick="sum()">sum</button>
+</body>
+</html>
